@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-to-cart {
+  display: grid;
+  border: 1px solid black;
+  margin: 4px;
+  grid-template-rows: 50px 50px;
+  grid-template-columns: repeat(5, 1fr);
+
+  .item-1 {
+    background-color: #f1c196;
+  }
+
+  .item-2 {
+    background-color: #f1c196;
+    grid-column: span 4;
+    justify-content: center;
+  }
+
+  .content {
+    grid-column: span 4;
+  }
+}
+
+.logo-to-cart > div:nth-child(n + 3):nth-child(-n + 7) {
+  cursor: pointer;
+  background-color: #faeadb;
+}
+
+.logo-to-cart > div:nth-child(n) {
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+}

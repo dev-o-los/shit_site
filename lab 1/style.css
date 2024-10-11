@@ -36,8 +36,3 @@
   place-items: center;
   border: 1px solid black;
 }
-
-.registration,
-.login {
-  display: none;
-}

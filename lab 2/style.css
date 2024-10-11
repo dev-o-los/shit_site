@@ -23,6 +23,32 @@
 
   .content {
     grid-column: span 4;
+    padding: 20px;
+  }
+
+  .username {
+    padding: 10px;
+  }
+
+  .btns {
+    padding: 20px;
+
+    .submit,
+    .reset {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: darkred;
+      border: 2px solid black;
+    }
+
+    .submit {
+      margin-right: 20px;
+      box-shadow: 5px 5px black;
+    }
+
+    .submit:active {
+      transform: scale(0.9);
+    }
   }
 }
 
@@ -35,9 +61,4 @@
   display: grid;
   place-items: center;
   border: 1px solid black;
-}
-
-.registration,
-.login {
-  display: none;
 }

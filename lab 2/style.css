@@ -21,14 +21,23 @@
     justify-content: center;
   }
 
-  div:nth-child(n + 3) {
-    background-color: #faeadb;
+  .content {
+    grid-column: span 4;
   }
+}
 
-  div:nth-child(n) {
-    display: grid;
-    place-items: center;
-    border: 1px solid black;
-    width: 100%;
-  }
+.logo-to-cart > div:nth-child(n + 3):nth-child(-n + 7) {
+  cursor: pointer;
+  background-color: #faeadb;
+}
+
+.logo-to-cart > div:nth-child(n) {
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+}
+
+.registration,
+.login {
+  display: none;
 }
